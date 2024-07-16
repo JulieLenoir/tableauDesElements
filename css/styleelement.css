@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Baskervville-Regular";
+    src:
+        url("fonts/Baskervville-Regular.woff2") format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: "Baskervville-Regular";
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+}
+
+.vide,
+#actif {
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+    border: white 1px solid;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+}
+
+#actif {
+    color: yellowgreen;
+}
+
+.element,
+.elementLA {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+    border: solid black 1px;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    background-color: white;
+}
+
+.haut {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.numero,
+.masse_atomique,
+.symbole,
+.nom {
+    margin: 0.1em;
+    text-align: center;
+    font-size: xx-small;
+}
+
+.symbole {
+    font-size: xx-large;
+}
+
+.numero,
+.masse_atomique,
+.nom {
+    display: none;
+}
+
+.element:hover {
+    transform: scale(2);
+    transition: transform .5s;
+    z-index: 999999;
+}
+
+.element:hover .numero,
+.element:hover .masse_atomique,
+.element:hover .nom {
+    display: block;
+}
+
+.elementLA:hover {
+    transform: scale(2);
+    transition: transform .5s;
+    z-index: 999999;
+}
+
+.elementLA:hover .numero,
+.elementLA:hover .masse_atomique,
+.elementLA:hover .nom {
+    display: block;
+}

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Baskervville-Regular";
+    src:
+        url("fonts/Baskervville-Regular.woff2") format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+input {
+    font-family: "Baskervville-Regular";
+    font-weight: normal;
+
+}
+
+#cadreCategorie {
+    width: 90%;
+    margin: 0 auto;
+    border: solid black 1px;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+
+}
+
+.titrePageCategorie {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -1px -1px black
+}
+
+.atomeParcategorie {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.elementPageCategorie {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+    margin: 2px;
+    border: solid black 1px;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    background-color: white;
+}
+
+.symbolePageCategorie {
+    font-size: xx-large;
+    margin: 0;
+}
+
+.nomPageCategorie {
+    /* font-weight: bold; */
+    font-size: small;
+    margin: 0;
+}
+
+.numeroPageCategorie,
+.masse_atomiquePageCategorie,
+.symbolePageCategorie {
+    display: none;
+}
+
+.elementPageCategorie:hover {
+    transform: scale(2);
+    transition: transform .5s;
+}
+
+.elementPageCategorie:hover .numeroPageCategorie,
+.elementPageCategorie:hover .masse_atomiquePageCategorie,
+.elementPageCategorie:hover .symbolePageCategorie {
+    display: block;
+}
+
+.numeroPageCategorie,
+.masse_atomiquePageCategorie {
+    margin: 0.1em;
+    text-align: center;
+    font-size: xx-small;
+}

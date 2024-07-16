@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Baskervville-Regular";
+    src:
+        url("fonts/Baskervville-Regular.woff2") format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: "Baskervville-Regular";
+    font-weight: normal;
+
+}
+
+nav {
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+    height: 3em;
+    margin: 16px;
+    border: solid black 1px;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+}
+
+nav li h4 {
+    font-size: 0.8em;
+}
+
+nav li:hover h4 {
+    font-size: 1em;
+}
+
+nav li:active {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    translate: -4px 4px;
+    margin-right: 19px;
+}

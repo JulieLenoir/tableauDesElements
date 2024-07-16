@@ -1,0 +1,93 @@
+/* ***********CSS TITRE DETAIL ATOME*************** */
+
+
+.titrePageDetailAtome {
+    width: 50%;
+    text-decoration: underline;
+}
+
+/* ***********CSS DETAIL ATOME*************** */
+
+.detailAtome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* ***********CSS POP UP DETAIL************* */
+.popUpDetail {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementPopUpDetail {
+    position: absolute;
+    left: 200px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 210px;
+    height: 210px;
+    margin: 2px;
+    border: solid black 1px;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    background-color: white;
+    display: flex;
+}
+
+.elementPopUpDetail p {
+    margin: 0;
+}
+
+/* ***********CSS TABLEAU ET ELEMENT DECOUVERTE************* */
+.tableauEtDecouverte {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.decouverte {
+    margin-left: 0.8em;
+    text-align: justify;
+    width: 30%;
+
+}
+
+.tableauDetailAtome1 {
+    width: 50%;
+}
+
+th {
+    text-align: left;
+}
+
+table,
+tr,
+td,
+th {
+
+    margin: 0.5em;
+    border: 1px solid #383838;
+    border-collapse: collapse;
+
+
+}
+
+.tableauDetail td th {
+    padding: 0.4em;
+    width: 60%;
+
+}
+
+.tableauDetailAtome th td {
+    width: 40%;
+    padding: 0.4em;
+
+}
